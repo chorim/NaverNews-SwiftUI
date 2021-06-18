@@ -16,22 +16,33 @@ struct MainView: View {
   
   init(viewModel: MainViewModel) {
     self.viewModel = viewModel
-    if #available(iOS 14.0, *) {} else {
-      UITableView.appearance().tableFooterView = UIView()
-    }
   }
   
   var body: some View {
     NavigationView {
-      ScrollView {
-        LazyVStack {
+      if #available(iOS 14.0, *) {
+        ScrollView {
+          LazyVStack {
+            ForEach(viewModel.dataSource, id: \.id) {
+              MainRow(feed: $0)
+                .padding(.horizontal, 20.0)
+            }
+          }
+        }
+        .navigationBarTitle("NaverNews", displayMode: .large)
+      } else {
+        List {
           ForEach(viewModel.dataSource, id: \.id) {
             MainRow(feed: $0)
               .padding(.horizontal, 20.0)
+              .listRowInsets(EdgeInsets())
           }
         }
+        .onAppear { UITableView.appearance().separatorStyle = .none }
+        .onDisappear { UITableView.appearance().separatorStyle = .singleLine }
+        .navigationBarTitle("NaverNews", displayMode: .large)
       }
-      .navigationBarTitle("NaverNews", displayMode: .large)
+      
     }
     .onAppear(perform: viewModel.fetchRelay)
   }
@@ -44,3 +55,4 @@ struct MainView_Previews: PreviewProvider {
     MainView(viewModel: .init(service: DefaultMainService()))
   }
 }
+
