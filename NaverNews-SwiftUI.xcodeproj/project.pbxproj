@@ -1,0 +1,723 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01307448267C392D0064C872 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01307447267C392D0064C872 /* AppDelegate.swift */; };
+		0130744A267C392D0064C872 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01307449267C392D0064C872 /* SceneDelegate.swift */; };
+		0130744E267C392E0064C872 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0130744D267C392E0064C872 /* Assets.xcassets */; };
+		01307451267C392E0064C872 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01307450267C392E0064C872 /* Preview Assets.xcassets */; };
+		01307454267C392E0064C872 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01307452267C392E0064C872 /* LaunchScreen.storyboard */; };
+		0130745F267C392E0064C872 /* NaverNews_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0130745E267C392E0064C872 /* NaverNews_SwiftUITests.swift */; };
+		0130746A267C392E0064C872 /* NaverNews_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01307469267C392E0064C872 /* NaverNews_SwiftUIUITests.swift */; };
+		0130747C267C3A170064C872 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0130747B267C3A170064C872 /* MainView.swift */; };
+		0130747F267C3FF70064C872 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0130747E267C3FF70064C872 /* Alamofire */; };
+		01307482267C40070064C872 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 01307481267C40070064C872 /* SwiftSoup */; };
+		01307485267C47150064C872 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01307484267C47150064C872 /* Feed.swift */; };
+		01307489267C620A0064C872 /* MainRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01307488267C620A0064C872 /* MainRow.swift */; };
+		0130748C267C64250064C872 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0130748B267C64250064C872 /* SDWebImageSwiftUI */; };
+		0130748E267C74FB0064C872 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0130748D267C74FB0064C872 /* MainViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0130745B267C392E0064C872 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0130743C267C392D0064C872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01307443267C392D0064C872;
+			remoteInfo = "NaverNews-SwiftUI";
+		};
+		01307466267C392E0064C872 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0130743C267C392D0064C872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01307443267C392D0064C872;
+			remoteInfo = "NaverNews-SwiftUI";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01307444267C392D0064C872 /* NaverNews-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NaverNews-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01307447267C392D0064C872 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		01307449267C392D0064C872 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0130744D267C392E0064C872 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01307450267C392E0064C872 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		01307453267C392E0064C872 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		01307455267C392E0064C872 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0130745A267C392E0064C872 /* NaverNews-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NaverNews-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0130745E267C392E0064C872 /* NaverNews_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverNews_SwiftUITests.swift; sourceTree = "<group>"; };
+		01307460267C392E0064C872 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01307465267C392E0064C872 /* NaverNews-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NaverNews-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01307469267C392E0064C872 /* NaverNews_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverNews_SwiftUIUITests.swift; sourceTree = "<group>"; };
+		0130746B267C392E0064C872 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0130747B267C3A170064C872 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		01307484267C47150064C872 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		01307488267C620A0064C872 /* MainRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRow.swift; sourceTree = "<group>"; };
+		0130748D267C74FB0064C872 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01307441267C392D0064C872 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0130748C267C64250064C872 /* SDWebImageSwiftUI in Frameworks */,
+				0130747F267C3FF70064C872 /* Alamofire in Frameworks */,
+				01307482267C40070064C872 /* SwiftSoup in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01307457267C392E0064C872 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01307462267C392E0064C872 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0130743B267C392D0064C872 = {
+			isa = PBXGroup;
+			children = (
+				01307446267C392D0064C872 /* NaverNews-SwiftUI */,
+				0130745D267C392E0064C872 /* NaverNews-SwiftUITests */,
+				01307468267C392E0064C872 /* NaverNews-SwiftUIUITests */,
+				01307445267C392D0064C872 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		01307445267C392D0064C872 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01307444267C392D0064C872 /* NaverNews-SwiftUI.app */,
+				0130745A267C392E0064C872 /* NaverNews-SwiftUITests.xctest */,
+				01307465267C392E0064C872 /* NaverNews-SwiftUIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01307446267C392D0064C872 /* NaverNews-SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				01307479267C39AA0064C872 /* UI */,
+				01307478267C39510064C872 /* Resources */,
+				01307477267C39390064C872 /* System */,
+			);
+			path = "NaverNews-SwiftUI";
+			sourceTree = "<group>";
+		};
+		0130745D267C392E0064C872 /* NaverNews-SwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0130745E267C392E0064C872 /* NaverNews_SwiftUITests.swift */,
+				01307460267C392E0064C872 /* Info.plist */,
+			);
+			path = "NaverNews-SwiftUITests";
+			sourceTree = "<group>";
+		};
+		01307468267C392E0064C872 /* NaverNews-SwiftUIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				01307469267C392E0064C872 /* NaverNews_SwiftUIUITests.swift */,
+				0130746B267C392E0064C872 /* Info.plist */,
+			);
+			path = "NaverNews-SwiftUIUITests";
+			sourceTree = "<group>";
+		};
+		01307477267C39390064C872 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				01307449267C392D0064C872 /* SceneDelegate.swift */,
+				01307447267C392D0064C872 /* AppDelegate.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		01307478267C39510064C872 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				01307455267C392E0064C872 /* Info.plist */,
+				0130744D267C392E0064C872 /* Assets.xcassets */,
+				01307452267C392E0064C872 /* LaunchScreen.storyboard */,
+				01307450267C392E0064C872 /* Preview Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		01307479267C39AA0064C872 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0130747A267C39B10064C872 /* Screens */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		0130747A267C39B10064C872 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				01307486267C61F80064C872 /* Main */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		01307483267C46C70064C872 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				01307484267C47150064C872 /* Feed.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		01307486267C61F80064C872 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				01307483267C46C70064C872 /* Models */,
+				01307487267C61FE0064C872 /* Components */,
+				0130747B267C3A170064C872 /* MainView.swift */,
+				0130748D267C74FB0064C872 /* MainViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		01307487267C61FE0064C872 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				01307488267C620A0064C872 /* MainRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01307443267C392D0064C872 /* NaverNews-SwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0130746E267C392E0064C872 /* Build configuration list for PBXNativeTarget "NaverNews-SwiftUI" */;
+			buildPhases = (
+				01307440267C392D0064C872 /* Sources */,
+				01307441267C392D0064C872 /* Frameworks */,
+				01307442267C392D0064C872 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NaverNews-SwiftUI";
+			packageProductDependencies = (
+				0130747E267C3FF70064C872 /* Alamofire */,
+				01307481267C40070064C872 /* SwiftSoup */,
+				0130748B267C64250064C872 /* SDWebImageSwiftUI */,
+			);
+			productName = "NaverNews-SwiftUI";
+			productReference = 01307444267C392D0064C872 /* NaverNews-SwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		01307459267C392E0064C872 /* NaverNews-SwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01307471267C392E0064C872 /* Build configuration list for PBXNativeTarget "NaverNews-SwiftUITests" */;
+			buildPhases = (
+				01307456267C392E0064C872 /* Sources */,
+				01307457267C392E0064C872 /* Frameworks */,
+				01307458267C392E0064C872 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0130745C267C392E0064C872 /* PBXTargetDependency */,
+			);
+			name = "NaverNews-SwiftUITests";
+			productName = "NaverNews-SwiftUITests";
+			productReference = 0130745A267C392E0064C872 /* NaverNews-SwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		01307464267C392E0064C872 /* NaverNews-SwiftUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01307474267C392E0064C872 /* Build configuration list for PBXNativeTarget "NaverNews-SwiftUIUITests" */;
+			buildPhases = (
+				01307461267C392E0064C872 /* Sources */,
+				01307462267C392E0064C872 /* Frameworks */,
+				01307463267C392E0064C872 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01307467267C392E0064C872 /* PBXTargetDependency */,
+			);
+			name = "NaverNews-SwiftUIUITests";
+			productName = "NaverNews-SwiftUIUITests";
+			productReference = 01307465267C392E0064C872 /* NaverNews-SwiftUIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0130743C267C392D0064C872 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					01307443267C392D0064C872 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					01307459267C392E0064C872 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 01307443267C392D0064C872;
+					};
+					01307464267C392E0064C872 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 01307443267C392D0064C872;
+					};
+				};
+			};
+			buildConfigurationList = 0130743F267C392D0064C872 /* Build configuration list for PBXProject "NaverNews-SwiftUI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0130743B267C392D0064C872;
+			packageReferences = (
+				0130747D267C3FF70064C872 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				01307480267C40070064C872 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+				0130748A267C64250064C872 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
+			productRefGroup = 01307445267C392D0064C872 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01307443267C392D0064C872 /* NaverNews-SwiftUI */,
+				01307459267C392E0064C872 /* NaverNews-SwiftUITests */,
+				01307464267C392E0064C872 /* NaverNews-SwiftUIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01307442267C392D0064C872 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01307454267C392E0064C872 /* LaunchScreen.storyboard in Resources */,
+				01307451267C392E0064C872 /* Preview Assets.xcassets in Resources */,
+				0130744E267C392E0064C872 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01307458267C392E0064C872 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01307463267C392E0064C872 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01307440267C392D0064C872 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01307448267C392D0064C872 /* AppDelegate.swift in Sources */,
+				01307485267C47150064C872 /* Feed.swift in Sources */,
+				0130747C267C3A170064C872 /* MainView.swift in Sources */,
+				0130744A267C392D0064C872 /* SceneDelegate.swift in Sources */,
+				01307489267C620A0064C872 /* MainRow.swift in Sources */,
+				0130748E267C74FB0064C872 /* MainViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01307456267C392E0064C872 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0130745F267C392E0064C872 /* NaverNews_SwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01307461267C392E0064C872 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0130746A267C392E0064C872 /* NaverNews_SwiftUIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0130745C267C392E0064C872 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01307443267C392D0064C872 /* NaverNews-SwiftUI */;
+			targetProxy = 0130745B267C392E0064C872 /* PBXContainerItemProxy */;
+		};
+		01307467267C392E0064C872 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01307443267C392D0064C872 /* NaverNews-SwiftUI */;
+			targetProxy = 01307466267C392E0064C872 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		01307452267C392E0064C872 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01307453267C392E0064C872 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0130746C267C392E0064C872 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0130746D267C392E0064C872 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0130746F267C392E0064C872 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"NaverNews-SwiftUI/Resources";
+				DEVELOPMENT_TEAM = 3G4595GUAV;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "NaverNews-SwiftUI/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "is.byeon.NaverNews-SwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		01307470267C392E0064C872 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"NaverNews-SwiftUI/Resources";
+				DEVELOPMENT_TEAM = 3G4595GUAV;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "NaverNews-SwiftUI/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "is.byeon.NaverNews-SwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		01307472267C392E0064C872 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3G4595GUAV;
+				INFOPLIST_FILE = "NaverNews-SwiftUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "is.byeon.NaverNews-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NaverNews-SwiftUI.app/NaverNews-SwiftUI";
+			};
+			name = Debug;
+		};
+		01307473267C392E0064C872 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3G4595GUAV;
+				INFOPLIST_FILE = "NaverNews-SwiftUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "is.byeon.NaverNews-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NaverNews-SwiftUI.app/NaverNews-SwiftUI";
+			};
+			name = Release;
+		};
+		01307475267C392E0064C872 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3G4595GUAV;
+				INFOPLIST_FILE = "NaverNews-SwiftUIUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "is.byeon.NaverNews-SwiftUIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "NaverNews-SwiftUI";
+			};
+			name = Debug;
+		};
+		01307476267C392E0064C872 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3G4595GUAV;
+				INFOPLIST_FILE = "NaverNews-SwiftUIUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "is.byeon.NaverNews-SwiftUIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "NaverNews-SwiftUI";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0130743F267C392D0064C872 /* Build configuration list for PBXProject "NaverNews-SwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0130746C267C392E0064C872 /* Debug */,
+				0130746D267C392E0064C872 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0130746E267C392E0064C872 /* Build configuration list for PBXNativeTarget "NaverNews-SwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0130746F267C392E0064C872 /* Debug */,
+				01307470267C392E0064C872 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01307471267C392E0064C872 /* Build configuration list for PBXNativeTarget "NaverNews-SwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01307472267C392E0064C872 /* Debug */,
+				01307473267C392E0064C872 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01307474267C392E0064C872 /* Build configuration list for PBXNativeTarget "NaverNews-SwiftUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01307475267C392E0064C872 /* Debug */,
+				01307476267C392E0064C872 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0130747D267C3FF70064C872 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+		01307480267C40070064C872 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.2;
+			};
+		};
+		0130748A267C64250064C872 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0130747E267C3FF70064C872 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0130747D267C3FF70064C872 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		01307481267C40070064C872 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01307480267C40070064C872 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+		0130748B267C64250064C872 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0130748A267C64250064C872 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0130743C267C392D0064C872 /* Project object */;
+}
