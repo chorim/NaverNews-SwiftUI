@@ -23,19 +23,25 @@ struct MainView: View {
       if #available(iOS 14.0, *) {
         ScrollView {
           LazyVStack {
-            ForEach(viewModel.dataSource, id: \.id) {
-              MainRow(feed: $0)
-                .padding(.horizontal, 20.0)
+            ForEach(viewModel.dataSource, id: \.id) { feed in
+              NavigationLink(destination: DetailView()) {
+                MainRow(feed: feed)
+                  .padding(.horizontal, 20.0)
+              }
+              .buttonStyle(PlainButtonStyle())
             }
           }
         }
         .navigationBarTitle("NaverNews", displayMode: .large)
       } else {
         List {
-          ForEach(viewModel.dataSource, id: \.id) {
-            MainRow(feed: $0)
-              .padding(.horizontal, 20.0)
-              .listRowInsets(EdgeInsets())
+          ForEach(viewModel.dataSource, id: \.id) { feed in
+            NavigationLink(destination: DetailView()) {
+              MainRow(feed: feed)
+                .padding(.horizontal, 20.0)
+                .listRowInsets(EdgeInsets())
+            }
+            .buttonStyle(PlainButtonStyle())
           }
         }
         .onAppear { UITableView.appearance().separatorStyle = .none }

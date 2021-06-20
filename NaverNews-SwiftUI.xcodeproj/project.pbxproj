@@ -21,6 +21,7 @@
 		01307489267C620A0064C872 /* MainRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01307488267C620A0064C872 /* MainRow.swift */; };
 		0130748C267C64250064C872 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0130748B267C64250064C872 /* SDWebImageSwiftUI */; };
 		0130748E267C74FB0064C872 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0130748D267C74FB0064C872 /* MainViewModel.swift */; };
+		018DD6DF267F8AB50022FE25 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018DD6DE267F8AB50022FE25 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		01307484267C47150064C872 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		01307488267C620A0064C872 /* MainRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRow.swift; sourceTree = "<group>"; };
 		0130748D267C74FB0064C872 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		018DD6DE267F8AB50022FE25 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 		0130747A267C39B10064C872 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				018DD6DD267F8AAB0022FE25 /* Detail */,
 				01307486267C61F80064C872 /* Main */,
 			);
 			path = Screens;
@@ -197,6 +200,14 @@
 				01307488267C620A0064C872 /* MainRow.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		018DD6DD267F8AAB0022FE25 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				018DD6DE267F8AB50022FE25 /* DetailView.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,6 +353,7 @@
 				01307448267C392D0064C872 /* AppDelegate.swift in Sources */,
 				01307485267C47150064C872 /* Feed.swift in Sources */,
 				0130747C267C3A170064C872 /* MainView.swift in Sources */,
+				018DD6DF267F8AB50022FE25 /* DetailView.swift in Sources */,
 				0130744A267C392D0064C872 /* SceneDelegate.swift in Sources */,
 				01307489267C620A0064C872 /* MainRow.swift in Sources */,
 				0130748E267C74FB0064C872 /* MainViewModel.swift in Sources */,
