@@ -24,7 +24,7 @@ struct MainView: View {
         ScrollView {
           LazyVStack {
             ForEach(viewModel.dataSource, id: \.id) { feed in
-              NavigationLink(destination: DetailView()) {
+              NavigationLink(destination: DetailView(with: feed)) {
                 MainRow(feed: feed)
                   .padding(.horizontal, 20.0)
               }
@@ -36,7 +36,7 @@ struct MainView: View {
       } else {
         List {
           ForEach(viewModel.dataSource, id: \.id) { feed in
-            NavigationLink(destination: DetailView()) {
+            NavigationLink(destination: DetailView(with: feed)) {
               MainRow(feed: feed)
                 .padding(.horizontal, 20.0)
                 .listRowInsets(EdgeInsets())
